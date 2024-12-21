@@ -1,4 +1,4 @@
-![GitHub Release](https://img.shields.io/github/v/release/Kanahiro/meta-fetcher-ts?label=meta-fetcher-ts)
+![GitHub Release](https://badge.fury.io/js/meta-fetcher-ts.svg)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Kanahiro/meta-fetcher-ts/test.yml?label=test)
 
 # meta-fetcher-ts
