@@ -71,7 +71,7 @@ async function parseMeta(url: string): Promise<ParseMetaResult> {
 			if (!href.startsWith('http')) {
 				// resolve relative URLs
 				const base = new URL(url);
-				return new URL(href, base).href;
+				return url;
 			} else {
 				// abs url
 				return href;
