@@ -1,5 +1,6 @@
 ![GitHub Release](https://badge.fury.io/js/meta-fetcher-ts.svg)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Kanahiro/meta-fetcher-ts/test.yml?label=test)
+[![codecov](https://codecov.io/gh/Kanahiro/meta-fetcher-ts/graph/badge.svg?token=Jy2oiwr0KV)](https://codecov.io/gh/Kanahiro/meta-fetcher-ts)
 
 # meta-fetcher-ts
 
