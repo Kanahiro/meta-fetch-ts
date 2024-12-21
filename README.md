@@ -1,3 +1,6 @@
+![GitHub Release](https://img.shields.io/github/v/release/Kanahiro/meta-fetcher-ts?label=meta-fetcher-ts)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Kanahiro/meta-fetcher-ts/test.yml?label=test)
+
 # meta-fetcher-ts
 
 A simple TypeScript library to fetch metadata from a URL.
