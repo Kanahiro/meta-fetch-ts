@@ -1,12 +1,12 @@
-name: Run Tests
+name: Run Tests and upload Coverage
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
 jobs:
-  test:
+  coverage:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,4 +25,9 @@ jobs:
         run: pnpm install
 
       - name: Run tests
-        run: pnpm test
+        run: pnpm test -- --coverage
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
