@@ -27,17 +27,15 @@ async function metaFetch(url: string): Promise<MetaFetchResult> {
 	if (meta.error !== null) {
 		return meta;
 	}
-	if (favicon.error !== null) {
-		return favicon;
+
+	if (favicon.result !== null) {
+		// concat implicit favicon.ico with removing duplicates
+		meta.result.favicons = Array.from(
+			new Set([favicon.result, ...meta.result.favicons]),
+		);
 	}
 
-	return {
-		result: {
-			...meta.result,
-			favicons: [favicon.result, ...meta.result.favicons],
-		},
-		error: null,
-	};
+	return meta;
 }
 
 export { metaFetch };
